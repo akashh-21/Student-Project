@@ -1,0 +1,258 @@
+PRODUCT REQUIREMENTS DOCUMENT (PRD)
+
+LearnTrack AI
+Gamified Learning, Assessment & Progress Tracking Platform
+Version: 3.0 (Budget-Friendly MVP)
+
+1. EXECUTIVE SUMMARY
+LearnTrack AI is a web-based learning platform designed to help organizations, training institutes, and learners manage learning resources, quizzes, coding assignments, and progress tracking from a single platform.
+
+The platform combines:
+- Learning Management
+- Assessments
+- Coding Challenges
+- Progress Tracking
+- Gamification
+- Leaderboards
+- Badges
+- Learning Streaks
+- Streak Recovery Challenges
+
+2. PROBLEM STATEMENT
+Organizations often use multiple disconnected tools such as Excel, learning platforms, forms, coding platforms, and manual reports. LearnTrack AI provides a unified learning ecosystem.
+
+3. PRODUCT VISION
+Build an engaging, gamified learning platform where learners stay motivated through progress visibility, challenges, streaks, rewards, and healthy competition.
+
+4. USER ROLES
+ADMIN:
+- Create users
+- Bulk upload users via Excel
+- Create courses and modules
+- Create quizzes and coding challenges
+- Upload test cases
+- Monitor performance
+- Manage streak recovery requests
+- View analytics
+
+STUDENT:
+- Login
+- Access courses
+- Complete modules
+- Attempt quizzes
+- Submit coding assignments
+- Track progress
+- Earn XP and badges
+- Maintain streaks
+- Request streak recovery
+
+5. CORE FEATURES
+A. User Management
+- Registration
+- Admin user creation
+- Excel upload
+- Activate/deactivate users
+
+B. Authentication
+- Username/password login
+- JWT authentication
+- Secure logout
+
+C. Course Management
+Supported Resources:
+- Udemy
+- Coursera
+- Microsoft Learn
+- YouTube
+- Internal PDFs
+- Internal Notes
+
+Course > Module > Resource > Quiz > Assignment > Coding Challenge
+
+D. Progress Tracking
+Content Completion = 30%
+Quiz Completion = 30%
+Coding Challenge Completion = 40%
+
+E. Quiz Module
+- MCQ
+- Multiple Answer
+- True/False
+- Auto Evaluation
+
+F. Coding Assessment Portal
+MVP Language:
+- Python
+
+Features:
+- Online Editor
+- Run Code
+- Submit Code
+- View Results
+
+G. Automated Test Case Validation
+Admin uploads CSV test cases.
+System executes code and validates outputs.
+
+H. Assignment Management
+- Create Assignments
+- Due Dates
+- Submission Tracking
+
+6. STUDENT DASHBOARD
+- Assigned Courses
+- Progress
+- XP Score
+- Levels
+- Badges
+- Current Streak
+- Longest Streak
+- Quiz Scores
+- Coding Scores
+
+7. ADMIN DASHBOARD
+- Total Students
+- Active Users
+- Course Completion Rate
+- Top Learners
+- Quiz Performance
+- Coding Performance
+- Recovery Requests
+
+8. GAMIFICATION SYSTEM
+XP Rules:
+- Daily Login: 10 XP
+- Complete Lesson: 20 XP
+- Quiz Completion: 50 XP
+- Assignment: 50 XP
+- Coding Challenge: 100 XP
+- Course Completion: 200 XP
+
+Levels:
+- Learner
+- Explorer
+- Achiever
+- Specialist
+- Master
+
+Badges:
+- First Login
+- First Quiz
+- Python Beginner
+- Quiz Master
+- Assignment Ace
+- Coding Champion
+- 7-Day Streak
+- 30-Day Streak
+- Comeback Kid
+- Challenger
+
+9. DAILY MISSIONS
+Example:
+- Complete 1 Lesson
+- Complete 1 Quiz
+- Solve 1 Coding Problem
+Reward: +50 XP
+
+10. LEADERBOARD
+- Weekly
+- Monthly
+- Overall
+
+11. CHALLENGE ARENA (UNIQUE FEATURE)
+Purpose:
+A learner who loses a streak can request recovery.
+
+Workflow:
+1. Learner loses streak.
+2. Learner requests recovery.
+3. Admin reviews request.
+4. Admin may Approve, Reject, or Issue Challenge.
+5. Learner completes challenge.
+6. Streak restored on success.
+
+Challenge Types:
+- Tic-Tac-Toe Challenge
+- Quiz Challenge
+- Coding Challenge
+- Custom Challenge
+
+Rules:
+- Maximum 3 recoveries/month
+- Challenge valid for 24 hours
+
+12. NOTIFICATION SYSTEM
+Examples:
+- Your streak is at risk
+- New badge unlocked
+- Today's mission is ready
+- Admin has challenged you
+
+13. ANALYTICS
+Student Analytics:
+- Progress
+- Quiz Performance
+- Coding Performance
+- XP Earned
+- Badges Earned
+
+Admin Analytics:
+- Completion Rates
+- Average Scores
+- Challenge Statistics
+- Recovery Statistics
+
+14. MVP SCOPE
+Phase 1:
+- Authentication
+- User Management
+- Excel Upload
+- Course Management
+- Quizzes
+- Coding Challenges
+- Dashboards
+
+Phase 2:
+- XP System
+- Badges
+- Learning Streaks
+- Daily Missions
+- Leaderboards
+- Notifications
+
+Phase 3:
+- Challenge Arena
+- Streak Recovery Requests
+- Admin-Issued Challenges
+- Tic-Tac-Toe Challenge
+- Challenge History
+
+15. TECHNOLOGY STACK
+Frontend:
+- ReactJS
+- Tailwind CSS
+
+Backend:
+- FastAPI
+- Python
+
+Database:
+- SQLite (Development)
+- PostgreSQL (Production)
+
+Authentication:
+- JWT
+
+Hosting:
+- Vercel
+- Render/Railway
+
+16. FUTURE ENHANCEMENTS
+- Local AI using Ollama
+- Certificates
+- Email Notifications
+- AI Mentor
+- Mobile App
+
+PRODUCT STATEMENT
+LearnTrack AI is a gamified learning and assessment platform that combines learning resources, quizzes, coding challenges, progress tracking, badges, leaderboards, learning streaks, and a unique Admin Challenge Arena where learners can earn back lost streaks through challenges.
